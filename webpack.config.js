@@ -58,8 +58,19 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    modules: ['app', 'node_modules'],
+    extensions: [
+      '.js',
+      '.jsx',
+      '.react.js',
+    ],
+    mainFields: [
+      'browser',
+      'jsnext:main',
+      'main',
+    ],
   },
+  target: 'web', // Make web variables accessible to webpack, e.g. window
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ],
