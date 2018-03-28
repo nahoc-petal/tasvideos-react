@@ -6,6 +6,7 @@ import {
   Link
 } from 'react-router-dom'
 import registerServiceWorker from './registerServiceWorker';
+import 'bulma/css/bulma.css';
 
 const Home = () => (
   <div>
