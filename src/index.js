@@ -8,6 +8,7 @@ import {
   Link,
 } from 'react-router-dom';
 import 'bulma/css/bulma.css';
+import Publications from './containers/Publications';
 
 const Home = () => (
   <div>
@@ -66,6 +67,7 @@ const App = () => (
         <li><Link href="/" to="/">Home</Link></li>
         <li><Link href="/about" to="/about">About</Link></li>
         <li><Link href="/topics" to="/topics">Topics</Link></li>
+        <li><Link href="/publications" to="/publications">Publications</Link></li>
       </ul>
 
       <hr />
@@ -73,6 +75,7 @@ const App = () => (
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/topics" component={Topics} />
+      <Route path="/publications" component={Publications} />
     </div>
   </Router>
 );
