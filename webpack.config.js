@@ -70,12 +70,11 @@ module.exports = {
       'main',
     ],
   },
-  target: 'web', // Make web variables accessible to webpack, e.g. window
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
+  target: 'web',
+  plugins: [new webpack.HotModuleReplacementPlugin()],
   devServer: {
     contentBase: './dist',
-    hot: true
+    hot: true,
+    historyApiFallback: true
   }
 };

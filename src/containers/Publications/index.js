@@ -5,7 +5,7 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
-import { Publication } from './../../components/Publication';
+import System from './../System';
 
 const Publications = ({ match }) => (
   <div>
@@ -23,7 +23,7 @@ const Publications = ({ match }) => (
       </li>
     </ul>
 
-    <Route path={`${match.path}/:publicationId`} component={Publication} />
+    <Route path={`${match.path}/:systemName`} component={System} />
     <Route
       exact
       path={match.path}
