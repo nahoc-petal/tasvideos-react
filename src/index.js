@@ -71,5 +71,7 @@ const App = () => (
   </Router>
 )
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('app'));
 registerServiceWorker();
+
+module.hot.accept();
