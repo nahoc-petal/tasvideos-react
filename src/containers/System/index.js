@@ -36,7 +36,18 @@ class System extends React.Component {
     return (
       <section className="section">
         <div className="container">
-          <h2>Movies</h2>
+          <div className="tabs is-small">
+            <ul>
+              <li className="is-active"><a href="/test">All</a></li>
+              <li><a href="/test">Moons</a></li>
+              <li><a href="/test">Stars</a></li>
+              <li><a href="/test">Notable improvement</a></li>
+              <li><a href="/test">Console-verified</a></li>
+              <li><a href="/test">Has commentary</a></li>
+              <li><a href="/test">Recommended for newcomers</a></li>
+            </ul>
+          </div>
+          <br />
           <ul>
             {publications ? this.renderPublications(publications) : null}
           </ul>
